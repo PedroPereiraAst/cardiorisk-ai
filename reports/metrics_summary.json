@@ -1,0 +1,112 @@
+{
+    "cross_validation": {
+        "Regressao Logistica": {
+            "accuracy_mean": 0.8429421768707483,
+            "accuracy_std": 0.01684575103869676,
+            "precision_mean": 0.865830532212885,
+            "recall_mean": 0.7920948616600791,
+            "f1_mean": 0.8213540550268069,
+            "roc_auc_mean": 0.9021435086652477
+        },
+        "Random Forest": {
+            "accuracy_mean": 0.7767006802721089,
+            "accuracy_std": 0.021695175020876194,
+            "precision_mean": 0.789002557544757,
+            "recall_mean": 0.7110671936758892,
+            "f1_mean": 0.7445956407658536,
+            "roc_auc_mean": 0.881552425030686
+        }
+    },
+    "test_evaluation": {
+        "Regressao Logistica": {
+            "accuracy": 0.8688524590163934,
+            "precision": 0.8333333333333334,
+            "recall": 0.8928571428571429,
+            "f1": 0.8620689655172413,
+            "roc_auc": 0.9621212121212122,
+            "confusion_matrix": [
+                [
+                    28,
+                    5
+                ],
+                [
+                    3,
+                    25
+                ]
+            ],
+            "classification_report": {
+                "0": {
+                    "precision": 0.9032258064516129,
+                    "recall": 0.8484848484848485,
+                    "f1-score": 0.875,
+                    "support": 33.0
+                },
+                "1": {
+                    "precision": 0.8333333333333334,
+                    "recall": 0.8928571428571429,
+                    "f1-score": 0.8620689655172413,
+                    "support": 28.0
+                },
+                "accuracy": 0.8688524590163934,
+                "macro avg": {
+                    "precision": 0.8682795698924731,
+                    "recall": 0.8706709956709957,
+                    "f1-score": 0.8685344827586207,
+                    "support": 61.0
+                },
+                "weighted avg": {
+                    "precision": 0.8711440155120748,
+                    "recall": 0.8688524590163934,
+                    "f1-score": 0.8690644431882419,
+                    "support": 61.0
+                }
+            }
+        },
+        "Random Forest": {
+            "accuracy": 0.8688524590163934,
+            "precision": 0.8333333333333334,
+            "recall": 0.8928571428571429,
+            "f1": 0.8620689655172413,
+            "roc_auc": 0.948051948051948,
+            "confusion_matrix": [
+                [
+                    28,
+                    5
+                ],
+                [
+                    3,
+                    25
+                ]
+            ],
+            "classification_report": {
+                "0": {
+                    "precision": 0.9032258064516129,
+                    "recall": 0.8484848484848485,
+                    "f1-score": 0.875,
+                    "support": 33.0
+                },
+                "1": {
+                    "precision": 0.8333333333333334,
+                    "recall": 0.8928571428571429,
+                    "f1-score": 0.8620689655172413,
+                    "support": 28.0
+                },
+                "accuracy": 0.8688524590163934,
+                "macro avg": {
+                    "precision": 0.8682795698924731,
+                    "recall": 0.8706709956709957,
+                    "f1-score": 0.8685344827586207,
+                    "support": 61.0
+                },
+                "weighted avg": {
+                    "precision": 0.8711440155120748,
+                    "recall": 0.8688524590163934,
+                    "f1-score": 0.8690644431882419,
+                    "support": 61.0
+                }
+            }
+        }
+    },
+    "model_chosen": "Regressao Logistica",
+    "justification": "A Regressao Logistica obteve desempenho superior na Validacao Cruzada 5-fold (F1-score 0.8214 vs 0.7446; ROC-AUC 0.9021 vs 0.8816) e no teste cego alcancou AUC excepcional de 0.9621 com Sensibilidade (Recall) de 89.29%. Alem disso, modelos lineares oferecem explicabilidade direta e menor suscetibilidade a overfitting em amostras clinicas compactas."
+}
