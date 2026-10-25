@@ -438,8 +438,8 @@ with tab_metrics:
     rf_img = os.path.join(fig_dir, "importancia_atributos_rf.png")
 
     if os.path.exists(cm_img):
-        g_col1.image(cm_img, caption="Matrizes de Confusão Comparativas (Teste N=61)", use_container_width=True)
+        g_col1.image(cm_img, caption="Matrizes de Confusão Comparativas (Teste N=61)", width='stretch')
     if os.path.exists(roc_img):
-        g_col2.image(roc_img, caption="Curvas ROC e Valores de AUC Comparativos", use_container_width=True)
+        g_col2.image(roc_img, caption="Curvas ROC e Valores de AUC Comparativos", width='stretch')
     if os.path.exists(rf_img):
-        st.image(rf_img, caption="Importância dos Atributos Clínicos Calculada pelo Random Forest", use_container_width=True)
+        st.image(rf_img, caption="Importância dos Atributos Clínicos Calculada pelo Random Forest", width='stretch')
